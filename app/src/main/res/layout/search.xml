@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dip"
+    android:id="@+id/rootll"
+    tools:context="com.example.kimyoungbin.csuccop.BoardList">
+    <!--검색부분-->
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <!--검색 종류 : 제목, 내용, 제목+내용 -->
+        <Spinner
+            android:id="@+id/searchType"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/searchVal"
+            android:fitsSystemWindows="true"/>
+
+        <!--검색어 입력창-->
+        <EditText
+            android:id="@+id/searchVal"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"/>
+
+        <!--검색버튼-->
+        <Button
+            android:id="@+id/btnShowList"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="search"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/searchVal"/>
+
+
+    </RelativeLayout>
+
+    <!--검색결과 헤더, 헤더까지 스크롤링 되지 않도록 별도의 레이아웃으로 분리-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="번호"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp" />
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="제목"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="조회수"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="작성자"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="작성일"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <!--검색결과 - 스크롤 설정함 -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!--스크롤 안에 테이블을 그림-->
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbl"
+            android:gravity="center">
+            <!--테이블 안의 row는 BoardList.java에서 검색결과로 생성한다.-->
+        </TableLayout>
+    </ScrollView>
+
+    <!--메시지 처리를 위한 공간-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/msgll">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Press the search button."
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>

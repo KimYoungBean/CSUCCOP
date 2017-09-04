@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView
+        android:id="@+id/firstMsg"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Pressing this button will trigger an" />
+    <TextView
+        android:id="@+id/firstMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Emergency SOS text message."
+        android:layout_below="@id/firstMsg" />
+
+    <TextView
+        android:id="@+id/secondMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="(Standard Text Message Rates aplicable)"
+        android:layout_below="@+id/firstMsg2" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Phone Number"
+        android:layout_below="@id/secondMsg"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="911"
+        android:layout_below="@id/phone"
+        android:id="@+id/numberView"/>
+    <TextView
+        android:layout_below="@id/numberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sosText"
+        android:text="SOS Message" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="[SOS] Help Me !!"
+        android:id="@+id/messageView"
+        android:layout_below="@id/sosText"/>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sosView"
+        android:layout_width="248dp"
+        android:layout_height="215dp"
+        android:scaleType="center"
+        android:src="@drawable/sos"
+        android:layout_below="@+id/messageView"
+        android:layout_alignEnd="@+id/secondMsg" />
+
+    <TextView
+        android:id="@+id/thirdMsg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sosView"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="A copy of your Emergency sos text will be"/>
+    <TextView
+        android:id="@+id/thirdMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="sent to your emergency contacts &amp; Police"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/thirdMsg"/>
+    <TextView
+        android:id="@+id/thirdMsg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:text="Control Room."
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/thirdMsg2"/>
+
+
+</RelativeLayout>

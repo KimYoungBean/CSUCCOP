@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CSUCCOP</string>
+    <string name="screen">screen</string>
+    <string name="category">category</string>
+    <string name="information">information</string>
+    <string name="optional">optional</string>
+    <string name="Send">send</string>
+</resources>

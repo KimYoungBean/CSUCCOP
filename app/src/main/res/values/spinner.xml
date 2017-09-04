@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerArray">
+        <item>Select Category</item>
+        <item>Harassment</item>
+        <item>Corruption</item>
+        <item>Domestic Violence</item>
+        <item>Other Illegal Offence</item>
+    </string-array>
+</resources>

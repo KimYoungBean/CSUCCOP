@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:columnCount="2"
+    android:rowCount="2"
+    tools:context="com.example.kimyoungbin.csuccop.MainActivity"
+    android:padding="15dp">
+
+<RelativeLayout
+    android:layout_margin="10dp"
+    android:id="@+id/first"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <Button
+        android:id="@+id/incident"
+        android:background="@drawable/smartphone"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+    <TextView
+        android:id="@+id/text_incident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:text="Report an Incident"
+        android:layout_below="@+id/incident"
+        android:layout_alignEnd="@+id/incident"
+        android:layout_marginEnd="42dp" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/sos"
+            android:background="@drawable/brokenheart"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/text_sos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:text="Help Me !!"
+            android:layout_below="@+id/sos"
+            android:layout_alignEnd="@+id/sos"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/location"
+            android:background="@drawable/placeholder"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:text="Tracking My Location"
+            android:layout_below="@+id/location"
+            android:layout_alignEnd="@+id/location"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/report"
+            android:background="@drawable/document3"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+        <TextView
+            android:id="@+id/text_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:text="Your Reports"
+            android:layout_below="@+id/report"
+            android:layout_alignEnd="@+id/report"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</GridLayout>

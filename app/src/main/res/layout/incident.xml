@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f5f5f5"
+    tools:context="com.example.kimyoungbin.csuccop.incidentActivity">
+    <!--screen-->
+    <ImageView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:src="@drawable/user3"
+        />
+    <!--icons-->
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screen"
+        android:layout_centerInParent="true"
+
+        >
+        <ImageView
+            android:id="@+id/capture"
+            android:src="@drawable/picture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:src="@drawable/user"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"/>
+        <ImageView
+            android:id="@+id/video"
+            android:src="@drawable/film"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icons"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:id="@+id/text_capture"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:text="Capture"
+            android:background="#00000000"/>
+        <Button
+            android:id="@+id/text_gallery"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:background="#00000000"/>
+        <Button
+            android:id="@+id/text_video"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:background="#00000000"/>
+
+    </LinearLayout>
+    <!--category-->
+    <TextView
+        android:id="@+id/text_category"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category : "
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/text_icons"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_category"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <!--information-->
+    <EditText
+        android:id="@+id/information"
+        android:layout_below="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="information"
+        android:textColor="#9e9e9e"
+        android:layout_margin="10dp"
+        android:background="#fffff6"/>
+    <!--optional-->
+    <EditText
+        android:id="@+id/optional"
+        android:layout_below="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name, Contact No.(optional)"
+        android:textColor="#9e9e9e"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"/>
+    <!--sendbutton-->
+    <Button
+        android:id="@+id/send"
+        android:text="Send"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:layout_below="@id/optional"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center" />
+
+</RelativeLayout>
