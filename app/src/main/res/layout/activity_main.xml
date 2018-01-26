@@ -20,18 +20,18 @@
     <Button
         android:id="@+id/incident"
         android:background="@drawable/smartphone"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
     <TextView
         android:id="@+id/text_incident"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center"
-        android:text="Report an Incident"
         android:layout_below="@+id/incident"
-        android:layout_alignEnd="@+id/incident"
-        android:layout_marginEnd="42dp" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="Report an Incident" />
 
 </RelativeLayout>
 
@@ -43,8 +43,8 @@
         <Button
             android:id="@+id/sos"
             android:background="@drawable/brokenheart"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
         <TextView
@@ -67,8 +67,8 @@
         <Button
             android:id="@+id/location"
             android:background="@drawable/placeholder"
-            android:layout_width="200dp"
-            android:layout_height="200dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
         <TextView
             android:id="@+id/text_location"
             android:layout_width="wrap_content"
@@ -89,8 +89,8 @@
         <Button
             android:id="@+id/report"
             android:background="@drawable/document3"
-            android:layout_width="200dp"
-            android:layout_height="200dp" />
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
         <TextView
             android:id="@+id/text_report"
             android:layout_width="wrap_content"
